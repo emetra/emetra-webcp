@@ -4,17 +4,22 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
-import { BsDropdownModule, CollapseModule } from 'ngx-bootstrap';
+import { BsDropdownModule, CollapseModule, CarouselModule } from 'ngx-bootstrap';
+import { HomeComponent } from './home/home.component';
+import { FoobarComponent } from './foobar/foobar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
-  ],
+    NavbarComponent,
+    HomeComponent,
+    FoobarComponent
+],
   imports: [
     BrowserModule,
     BsDropdownModule.forRoot(),
-    CollapseModule.forRoot()
+    CollapseModule.forRoot(),
+    CarouselModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
