@@ -4,7 +4,7 @@ import { CarouselConfig } from 'ngx-bootstrap/carousel';
 @Component({
   selector: 'em-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css'],
+  styleUrls: ['./home.component.scss'],
   providers: [{provide: CarouselConfig, useValue: {interval: 3000, noPause: true}}]
 })
 

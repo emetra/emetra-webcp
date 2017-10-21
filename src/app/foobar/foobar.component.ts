@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'em-foobar',
   templateUrl: './foobar.component.html',
-  styleUrls: ['./foobar.component.css']
+  styleUrls: ['./foobar.component.scss']
 })
 export class FoobarComponent implements OnInit {
 
