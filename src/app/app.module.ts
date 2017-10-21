@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
 import { BsDropdownModule, CollapseModule } from 'ngx-bootstrap';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
