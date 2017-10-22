@@ -10,9 +10,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { BsDropdownModule, CollapseModule, CarouselModule } from 'ngx-bootstrap';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
-import { ServicesComponent } from './services/services.component';
 import { HomeComponent } from './home/home.component';
 import { FoobarComponent } from './foobar/foobar.component';
+import { ServicesComponent } from './services/services.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +23,9 @@ import { FoobarComponent } from './foobar/foobar.component';
     ServicesComponent,
     HomeComponent,
     FoobarComponent
-  ],
+,
+    ServicesComponent
+],
   imports: [
     BrowserModule,
     HttpModule,
@@ -53,5 +55,5 @@ import { FoobarComponent } from './foobar/foobar.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }  
+export class AppModule { }
 
