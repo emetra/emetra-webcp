@@ -7,11 +7,12 @@ import { RouterModule } from "@angular/router";
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
-import { BsDropdownModule, CollapseModule } from 'ngx-bootstrap';
+import { BsDropdownModule, CollapseModule, CarouselModule } from 'ngx-bootstrap';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { ServicesComponent } from './services/services.component';
 import { HomeComponent } from './home/home.component';
+import { FoobarComponent } from './foobar/foobar.component';
 
 @NgModule({
   declarations: [
@@ -20,12 +21,14 @@ import { HomeComponent } from './home/home.component';
     ContactComponent,
     AboutComponent,
     ServicesComponent,
-    HomeComponent
+    HomeComponent,
+    FoobarComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
     FormsModule,
+    CarouselModule.forRoot(),
     BsDropdownModule.forRoot(),
     CollapseModule.forRoot(),
     RouterModule.forRoot([
@@ -50,4 +53,5 @@ import { HomeComponent } from './home/home.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { }  
+
