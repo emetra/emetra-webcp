@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpModule } from "@angular/http";
-import { FormsModule } from "@angular/forms";
-import { RouterModule } from "@angular/router";
+import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -14,6 +14,11 @@ import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { FoobarComponent } from './foobar/foobar.component';
 import { ServicesComponent } from './services/services.component';
+import { AgmCoreModule } from 'angular2-google-maps/core';
+
+const googleMapsCore = AgmCoreModule.forRoot({
+  apiKey : 'AIzaSyBeVTAIWvBLhSx79lFe82XEXD8FtmO02n8',
+});
 
 
 @NgModule({
@@ -32,6 +37,7 @@ import { ServicesComponent } from './services/services.component';
     BrowserModule,
     HttpModule,
     FormsModule,
+    googleMapsCore,
     CarouselModule.forRoot(),
     BsDropdownModule.forRoot(),
     CollapseModule.forRoot(),
