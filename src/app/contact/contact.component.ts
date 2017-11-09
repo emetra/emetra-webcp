@@ -10,6 +10,7 @@ export class ContactComponent implements OnInit {
   constructor() { }
   lat: number = -6.242928;
   lng: number = 106.613657;
+  zoom: number = 16;
   ngOnInit() {
   }
 
