@@ -1,12 +1,9 @@
 .container{
-    padding-top: 33px;
     height: 100%;
     width: 100%;
-  
 }
 .Header{
-    height: 100%;
-    width: 100%;
+   padding: 20px;
 }
 .display-3{
     background: url(http://apod.nasa.gov/apod/image/0603/coma_misti.jpg) -80px -80px;
@@ -14,47 +11,44 @@
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     font-weight: bold;
-    font-size: 100px;
     font-family: arial, helvetica;
     width: 600px;
-    margin: 10px auto;
+    margin: 0 auto;
     text-align: center;
+    padding:20px;
 }
 .lead{
     float: left;
-    margin: 5px 0 0 0px;
-    font-size: 20px;
+    font-size: 1rem;
     color: #333;
     letter-spacing: 1px;
-    padding: 25px;
     font-weight: normal;
- 
-
 }
+
 .about-story-content h1{
     text-align: center;
-    padding:40px;
+    padding:20px;
     text-shadow: 2px 2px 2px #CCCCCC;
-    font-size: 90px;
-
 }
 .about-story-content{
     text-align: left;
     letter-spacing: 1px;
-    font-size:20px;
+    font-size:1rem;
     padding: 20px;
-   
+    margin-bottom: -30px;
+}
+
+.about-why-content {
+    padding: 20px;
 }
 .about-why-content h1{
     text-align:center;
-    padding:40px;
-    font-weight: bold;
+    padding:20px;
+    text-shadow: 2px 2px 2px #CCCCCC;
 }
 .about-why-content li{
-text-align:left;
-font-size: 20px;
-letter-spacing: 1px;
-padding:10px;
-font-weight: normal;
-
+    text-align:left;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding:5px;
 }
