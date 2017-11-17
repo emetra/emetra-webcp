@@ -1,7 +1,16 @@
 <section class="background-gray-lightest">
   <div class="container pt-4">
+    <sebm-google-map
+        [latitude]="lat"
+        [longitude]="lng"
+        [zoom]="zoom">
+    <sebm-google-map-marker
+        [latitude]="lat"
+        [longitude]="lng">
+      </sebm-google-map-marker>
+    </sebm-google-map>
     <h1 class="heading">Contact</h1>
-    <p class="lead">Lorem Ipsum bla bla bla bla bla bla bla bla bla bla bla bla bla bla. </p>
+    <p class="lead">CV. Puja Mandiri </p>
   </div>
 </section>
 <section>
@@ -11,20 +20,22 @@
         <div class="box-simple">
           <div class="icon"><i class="fa fa-map-marker fa-4x text-skyblue my-md-2"></i></div>
           <h4 class="heading margin-bottom">Address</h4>
-          <p>Tangerang<br>Tangerang Selatan<br>Indonesia, <strong>Serpong</strong></p>
+          <p>Cluster Monaco Village<br>Princess Alice 2 No. 17<br>Gading Serpong <strong>Tangerang</strong></p>
         </div>
         <div class="box-simple">
           <div class="icon"><i class="fa fa-phone fa-4x text-skyblue my-2"></i></div>
-          <h4 class="heading margin-bottom">Call center</h4>
-          <p class="text-muted">You will get charge :p.</p>
-          <p><strong>+62 828 122 322</strong></p>
+          <h4 class="heading margin-bottom">Contact Person</h4>
+          <p class="text-muted">Emetra</p>
+          <p class="text-muted">Felix Boenawan</p>
+          <p><strong>+62 812 195 7740</strong></p>
         </div>
         <div class="box-simple ">
           <div class="icon"><i class="fa fa fa-envelope-open fa-4x text-skyblue my-md-2"></i></div>
           <h4 class="heading margin-bottom pt-2">Electronic support</h4>
-          <p class="text-muted">Please feel free to write an email to us or to use our electronic ticketing system.</p>
+          <p class="text-muted">Please feel free to write an email to us or use our contact form.</p>
+
           <ul>
-            <li><strong><a href="mailto:">emetra@gmail.com</a></strong></li>
+            <li><strong><a href="mailto:">support@emetra.io</a></strong></li>
             <li><strong><a href="#">
               Our Support Ticket</a></strong></li>
           </ul>
@@ -34,40 +45,40 @@
         <div class="icon"><i class="fa fa-pencil-square-o fa-4x text-skyblue my-md-2"></i></div>
         <h4 class="heading margin-bottom">Contact form</h4>
         <p class="text-muted">Please Fill.</p>
-        <form>
+        <form enctype="multipart/form-data">
           <div class="row">
             <div class="col-sm-6">
               <div class="form-group">
                 <label for="firstname">Firstname</label>
-                <input id="firstname" type="text" class="form-control">
+                <input id="firstname" type="text" class="form-control" [(ngModel)]="data.firstname" name="firstname">
               </div>
             </div>
             <div class="col-sm-6">
               <div class="form-group">
                 <label for="lastname">Lastname</label>
-                <input id="lastname" type="text" class="form-control">
+                <input id="lastname" type="text" class="form-control" [(ngModel)]="data.lastname" name="lastname">
               </div>
             </div>
             <div class="col-sm-6">
               <div class="form-group">
                 <label for="email">Email</label>
-                <input id="email" type="text" class="form-control">
+                <input id="email" type="text" class="form-control" [(ngModel)]="data.email" name="email">
               </div>
             </div>
             <div class="col-sm-6">
               <div class="form-group">
                 <label for="subject">Subject</label>
-                <input id="subject" type="text" class="form-control">
+                <input id="subject" type="text" class="form-control" [(ngModel)]="data.subject" name="subject">
               </div>
             </div>
             <div class="col-sm-12">
               <div class="form-group">
                 <label for="message">Message</label>
-                <textarea id="message" class="form-control"></textarea>
+                <textarea id="message" class="form-control" [(ngModel)]="data.message" name="message"></textarea>
               </div>
             </div>
             <div class="col-sm-12">
-              <button type="submit" class="btn btn-info"><i class=""></i> Send message</button>
+              <button type="button" class="btn btn-info" (click)="postMessage()"><i class=""></i> Send message</button>
             </div>
           </div>
         </form>
