@@ -1,16 +1,21 @@
 .carousel-item img {
-    max-height: 450px;
+    max-height: 863px;
     height: auto;
     width: 100%;
-    filter: blur(5px);
+  -webkit-animation-duration: 2s;
 }
 
-h2{
-    color: black;
+h1{
+  font-size: 90px;
+  color: black;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 1s;
 }
 
 h4{
     color: black;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 1s;
 }
 
 #services{
