@@ -15,6 +15,7 @@ import { HomeComponent } from './home/home.component';
 import { FoobarComponent } from './foobar/foobar.component';
 import { ServicesComponent } from './services/services.component';
 import { AgmCoreModule } from 'angular2-google-maps/core';
+import { ContactService } from './contact/contact.service';
 
 const googleMapsCore = AgmCoreModule.forRoot({
   apiKey : 'AIzaSyBeVTAIWvBLhSx79lFe82XEXD8FtmO02n8',
@@ -60,7 +61,7 @@ const googleMapsCore = AgmCoreModule.forRoot({
       },
     ])
   ],
-  providers: [],
+  providers: [ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
