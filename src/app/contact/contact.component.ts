@@ -31,14 +31,15 @@ export class ContactComponent implements OnInit {
   postMessage(): void{
 
     this.contactService.send(this.data)
-    .subscribe(
-        res => {
-          console.log(res);
-        },
-        err => {
-          console.log(err);
-        }
-    )
+    .map(res => {
+      // this.data =  res.json();
+      console.log(res.json());
+    })
+    .catch(err => {
+      console.log(err);
+      return err;
+    })
+    .subscribe()
 
   }
 }
