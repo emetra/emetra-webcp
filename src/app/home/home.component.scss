@@ -18,8 +18,16 @@ h4{
   -webkit-animation-delay: 1s;
 }
 
-#services{
-    padding: 30px;
+#service .carousel2 {
+    padding-top: 10px;
+    max-height: 400px;
+    height: 100%;
+    width: 100%;
+  -webkit-animation-duration: 2s;
+}
+
+#service .animated {
+    color: white;
 }
 
 #tagline{

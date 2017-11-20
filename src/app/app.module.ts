@@ -48,7 +48,7 @@ const googleMapsCore = AgmCoreModule.forRoot({
         component: HomeComponent
       },
       {
-        path: 'service',
+        path: 'services',
         component: ServicesComponent
       },
       {

@@ -18,13 +18,6 @@ export class ContactService {
 
     public send(ticket: Ticket): Observable<Response> {
         let url = "http://localhost/api-emetra/public/api/v1/mail/contact";
-        // const data = {
-        //     email: "bobandrean94@gmail.com",
-        //     firstname: "Bob",
-        //     lastname: "Andrean",
-        //     subject: "Test",
-        //     message: "Test message"
-        // };
 
         return this.http.post(url,ticket);
     }
