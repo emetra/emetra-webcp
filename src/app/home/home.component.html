@@ -1,70 +1,105 @@
-<carousel>
-  <slide>
-    <img class="img-fluid animated fadeIn" src="/assets/img/slide1.jpg">
-    <div class="carousel-caption d-md-block">
-      <h1 class="animated fadeInRight">We're Emetra</h1>
-      <h4 class="animated fadeIn">We're here to help you grow your business.</h4>
-    </div>
-  </slide>
-  <slide>
-    <img class="img-fluid animated fadeIn" src="/assets/img/slide2.jpg">
-    <div class="carousel-caption d-md-block">
-      <h1 class="animated bounceIn">We're Emetra</h1>
-      <h4 class="animated fadeIn">We make sure that our services are making your company stronger.</h4>
-    </div>
-  </slide>
-  <slide>
-    <img class="img-fluid animated fadeIn" src="/assets/img/slide3.jpg">
-    <div class="carousel-caption d-md-block">
-      <h1 class="animated zoomIn">We're Emetra</h1>
-      <h4 class="animated fadeIn">We're open for your inputs for development in the future.</h4>
-    </div>
-  </slide>
-</carousel>
+<section>
+  <ngx-carousel
+    [inputs]="carouselOne"
+    [moveToSlide]="2"
+    (onMove)="onMovefn($event)">
 
-<section id="service">
-  <carousel>
-    <slide>
-      <a href="/services"><img class="carousel2 img-fluid animated fadeIn" src="/assets/img/problem.jpg"></a>
-      <div class="carousel-caption d-md-block">
-        <h2 class="animated fadeInRight">Tell us your problem</h2>
-        <h4 class="animated fadeIn">We need to know what holds your business back from growing.</h4>
+    <ngx-item NgxCarouselItem>
+      <div class="item">
+        <div class="bannerStyle" style="background: url('assets/img/slide1.jpg'); background-position:center center; background-size: cover;">
+
+        </div>
       </div>
-    </slide>
-    <slide>
-      <a href="/services"><img class="carousel2 img-fluid animated fadeIn" src="/assets/img/need.jpg"></a>
-      <div class="carousel-caption d-md-block">
-        <h2 class="animated bounceIn">Tell us what you need</h2>
-        <h4 class="animated fadeIn">Therefore we can give you some choices of solution to get rid of your problem.</h4>
+    </ngx-item>
+
+    <ngx-item NgxCarouselItem>
+      <div class="item">
+        <div class="bannerStyle" style="background: url('assets/img/slide2.jpg'); background-position:center center; background-size: cover;">
+
+        </div>
       </div>
-    </slide>
-    <slide>
-      <a href="/services"><img class="carousel2 img-fluid animated fadeIn" src="/assets/img/make.jpg"></a>
-      <div class="carousel-caption d-md-block">
-        <h2 class="animated zoomIn">We'll make it for you</h2>
-        <h4 class="animated fadeIn">Whatever you need, you'll have it.</h4>
+    </ngx-item>
+
+    <ngx-item NgxCarouselItem>
+      <div class="item">
+        <div class="bannerStyle" style="background: url('assets/img/slide3.jpg'); background-position:center center; background-size: cover;">
+          <h1 class="animated fadeInRight">Emetra</h1>
+        </div>
       </div>
-    </slide>
-  </carousel>
+    </ngx-item>
+
+    <ngx-item NgxCarouselItem>
+      <div class="item">
+        <div class="bannerStyle" style="background: url('assets/img/slide4.jpg'); background-position:center center; background-size: cover;">
+
+        </div>
+      </div>
+    </ngx-item>
+
+    <ngx-item NgxCarouselItem>
+      <div class="item">
+        <div class="bannerStyle" style="background: url('assets/img/slide5.jpg'); background-position:center center; background-size: cover;">
+
+        </div>
+      </div>
+    </ngx-item>
+
+    <a NgxCarouselPrev class='leftRs'><i class="fa fa-chevron-left"></i></a>
+    <a NgxCarouselNext class='rightRs'><i class="fa fa-chevron-right"></i></a>
+  </ngx-carousel>
 </section>
+<section>
+  <ngx-carousel
+    [inputs]="carouselTwo"
+    [moveToSlide]="0"
+    (onMove)="onMovefn2($event)">
 
+    <ngx-item NgxCarouselItem>
+      <div class="item2">
+        <div class="bannerStyle2" style="background: url('assets/img/slideb1.jpg'); background-position:center center; background-size: cover; background-attachment: fixed;">
+          <h1 class="slideb1 animated fadeInUp">What do we do?</h1>
+          <h4 class="slidebh1 animated fadeInUp">We're IT company that give solution for your needs<br>on Web Based App and GPS Tracking.</h4>
+        </div>
+      </div>
+    </ngx-item>
+
+    <ngx-item NgxCarouselItem>
+      <div class="item2">
+        <div class="bannerStyle2" style="background: url('assets/img/slideb2.jpg'); background-position:center center; background-size: cover;">
+          <h1 class="slideb2 animated fadeInUp">Why you should choose us? </h1>
+          <h4 class="slidebh2 animated fadeInUp">We will listen to your problem as a friend <br>and we will solve it together as a partner.</h4>
+        </div>
+      </div>
+    </ngx-item>
+
+    <ngx-item NgxCarouselItem>
+      <div class="item2">
+        <div class="bannerStyle2" style="background: url('assets/img/slideb3.jpg'); background-position:center center; background-size: cover;">
+          <h1 class="slideb3 animated fadeInUp">We'll make it for you</h1>
+          <h4 class="slidebh3 animated fadeInUp">Whatever you need, We will solve it!.</h4>
+        </div>
+      </div>
+    </ngx-item>
+
+    <a NgxCarouselPrev class='leftRs'></a>
+    <a NgxCarouselNext class='rightRs'></a>
+  </ngx-carousel>
+</section>
   <!-- more info -->
   <section id="tagline">
     <h5>
-      For more info please kindly contact us
-      <span>
-        <button type="button" class="btn btn-outline-light" routerLink="/contact">here</button>
-      </span>
+      For more info please kindly <br><br>
+        <button type="button" class="btn btn-outline-light btn-lg col-md-3 col-sm-12" routerLink="/contact">Contact Us</button>
     </h5>
   </section>
 
    <!-- Clients -->
    <section class="clients">
-          <h2 class="client section-heading">Our Clients</h2>
+          <h3 class="client section-heading">Our Clients</h3>
       <div class="row">
         <div class="col-md-12 col-sm-6 col-xs-12">
           <a href="#">
-            <img width="100px" class="img-fluid d-block mx-auto" src="\assets\img\brother_ishop.png" alt="" >
+            <img width="100px" class="img-fluid d-block" src="\assets\img\brother_ishop.png" alt="" >
           </a>
         </div>
          <!--<div class="col-md-3 col-sm-6 col-xs-12">

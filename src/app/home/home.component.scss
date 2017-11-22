@@ -1,54 +1,194 @@
-.carousel-item img {
-    max-height: 863px;
-    height: auto;
+.item{
+  .bannerStyle{
     width: 100%;
-  -webkit-animation-duration: 2s;
-}
+    height: 860px;
+    h1 {
+      padding-top: 16%;
+      font-size: 200px;
+      font-weight: bold;
+      text-align: center;
+      color: skyblue;
+    }
+    h4 {
+      font-size: 100px;
+      text-align: center;
+      color: skyblue;
+    }
+  }
+  @media only screen and (max-width: 576px) {
+    .bannerStyle{
+      width: 100%;
+      height: 300px;
+      h1 {
+        line-height: 180px;
+        font-size: 50px;
+        text-align: center;
+      }
+      h4 {
+        font-size: 25px;
+        text-align: center;
+      }
+    }
 
-h1{
-  font-size: 90px;
-  color: black;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-delay: 1s;
+  }
 }
-
-h4{
-    color: black;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-delay: 1s;
-}
-
-#service .carousel2 {
-    padding-top: 10px;
-    max-height: 400px;
-    height: 100%;
+.item2{
+  .bannerStyle2{
+    background: rgba(0,0,0,.32);
     width: 100%;
-  -webkit-animation-duration: 2s;
-}
-
-#service .animated {
+    height: 400px;
+    -webkit-filter: grayscale(90%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(90%);
+  }
+  .slideb1{
     color: white;
+    padding-top: 5%;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .slideb2{
+    color: black;
+    padding-top: 5%;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .slideb3{
+    color: white;
+    padding-top: 5%;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .slidebh1{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .slidebh2{
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .slidebh3{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
+  @media only screen and (max-width: 576px) {
+    .bannerStyle2{
+      width: 100%;
+      height: 200px;
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+      .slideb1{
+        color: white;
+        padding-top: 13%;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+      }
+      .slideb2{
+        color: black;
+        padding-top: 13%;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+      }
+      .slideb3{
+        color: white;
+        padding-top: 13%;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+      }
+      .slidebh1{
+        color: white;
+        font-size: 13px;
+        font-weight: bold;
+      }
+      .slidebh2{
+        color: black;
+        font-size: 13px;
+        font-weight: bold;
+      }
+      .slidebh3{
+        color: white;
+        font-size: 13px;
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+  }
 }
+@media only screen and (max-width: 576px) {
+  .leftRs {
+    font-size: 30px !important;
+  }
+
+  .rightRs {
+    font-size: 30px !important;
+  }
+  #tagline{
+    padding: 30px!important;
+    min-height: 150px!important;
+  }
+
+  .clients{
+    padding: 30px!important;
+    min-height: 200px!important;
+  }
+}
+  .leftRs {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+    height: 60px;
+    //box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, .3);
+    //border-radius: 999px;
+    left: 0;
+    font-size: 42px;
+  }
+
+  .rightRs {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+    height: 60px;
+    //box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, .3);
+    //border-radius: 999px;
+    right: 0;
+    font-size: 42px;
+  }
 
 #tagline{
-    padding: 30px;
-    max-height: 100px;
-    height: auto;
-    background-color: lightskyblue;
-    color: white;
-    text-align: center;
+  padding: 70px;
+  min-height: 250px;
+  height: auto;
+  background-color: lightskyblue;
+  color: white;
+  text-align: center;
 }
 
 .clients{
-    padding: 30px;
+  padding: 70px;
+  min-height: 250px;
+  height: auto;
 }
 
 .client{
-    text-align: center;
-    padding-bottom: 20px;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 20px;
+  color:#3c3f44;
 }
 
-.col-md-4{
-    padding-top: 20px;
-    color: black;
-}
+

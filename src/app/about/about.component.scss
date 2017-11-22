@@ -1,9 +1,48 @@
-.row {
-  h3{
-    font-size: 100px;
-    text-align: center;
+.wrapper {
+  width: 100%;
+  height: 100%;
+  padding-top: 9%;
+  padding-bottom: 9%;
+  padding-left: 9%;
+  padding-right: 9%;
+  top: 0;
+  bottom: 0;
+  opacity: 0.9;
+
+  .box {
+    background-color: #3c3f44;
+    opacity: 0.8;
+    padding: 40px;
+    border-radius: 6px;
+    //box-shadow:  3px 3px 1px #000;
   }
-  .about{
-    height: 300px;
+
+  .content {
+    color: white;
+    font-weight: bold;
+    z-index: 1000;
+    text-align: justify;
+  }
+  .title {
+    color: deepskyblue;
+    text-align: center;
+    font-size: 60px;
+  }
+  h2 {
+    color: deepskyblue;
+  }
+  ul li {
+    list-style-type: circle;
+    color: white;
   }
 }
+
+@media only screen and (max-width: 400px) {
+  .wrapper {
+    .title {
+      font-weight: bold;
+      font-size: 42px;
+    }
+  }
+}
+

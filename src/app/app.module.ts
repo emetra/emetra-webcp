@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
 
-import { BsDropdownModule, CollapseModule, CarouselModule } from 'ngx-bootstrap';
+import { BsDropdownModule, CollapseModule } from 'ngx-bootstrap';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
@@ -16,6 +16,8 @@ import { FoobarComponent } from './foobar/foobar.component';
 import { ServicesComponent } from './services/services.component';
 import { AgmCoreModule } from 'angular2-google-maps/core';
 import { ContactService } from './contact/contact.service';
+import { NgxCarouselModule } from 'ngx-carousel';
+import 'hammerjs';
 
 const googleMapsCore = AgmCoreModule.forRoot({
   apiKey : 'AIzaSyBeVTAIWvBLhSx79lFe82XEXD8FtmO02n8',
@@ -39,7 +41,7 @@ const googleMapsCore = AgmCoreModule.forRoot({
     HttpModule,
     FormsModule,
     googleMapsCore,
-    CarouselModule.forRoot(),
+    NgxCarouselModule,
     BsDropdownModule.forRoot(),
     CollapseModule.forRoot(),
     RouterModule.forRoot([
