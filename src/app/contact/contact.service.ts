@@ -17,9 +17,9 @@ export class ContactService {
     constructor(private http: Http) { }
 
     public send(ticket: Ticket): Observable<Response> {
-        let url = "http://localhost/api-emetra/public/api/v1/mail/contact";
+        const url = 'http://localhost/api-emetra/public/api/v1/mail/contact';
 
-        return this.http.post(url,ticket);
+        return this.http.post(url, ticket);
+
     }
-
 }
