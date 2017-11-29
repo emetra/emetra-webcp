@@ -7,7 +7,6 @@ import { Ticket } from '../models/Ticket';
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
-  
 
 export class ContactComponent implements OnInit {
   lat: number = -6.242928;
@@ -23,9 +22,9 @@ export class ContactComponent implements OnInit {
   };
 
   constructor(private contactService: ContactService) { }
-  
+
   ngOnInit() {
-    
+
   }
 
   postMessage(): void{
